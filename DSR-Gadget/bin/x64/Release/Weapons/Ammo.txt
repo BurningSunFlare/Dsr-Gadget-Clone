@@ -1,0 +1,14 @@
+2000000 999 0 Standard Arrow
+2001000 999 0 Large Arrow
+2002000 999 0 Feather Arrow
+2003000 999 0 Fire Arrow
+2004000 999 0 Poison Arrow
+2005000 999 0 Moonlight Arrow
+2006000 999 0 Wooden Arrow
+2007000 999 0 Dragonslayer Arrow
+2008000 999 0 Gough's Great Arrow
+2100000 999 0 Standard Bolt
+2101000 999 0 Heavy Bolt
+2102000 999 0 Sniper Bolt
+2103000 999 0 Wood Bolt
+2104000 999 0 Lightning Bolt

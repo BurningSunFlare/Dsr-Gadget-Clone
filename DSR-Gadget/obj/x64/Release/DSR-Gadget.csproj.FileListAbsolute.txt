@@ -1,0 +1,10 @@
+C:\Users\Vappy\Downloads\DSR-Gadget-master\DSR-Gadget\bin\x64\Release\DSR-Gadget.exe.config
+C:\Users\Vappy\Downloads\DSR-Gadget-master\DSR-Gadget\bin\x64\Release\DSR-Gadget.exe
+C:\Users\Vappy\Downloads\DSR-Gadget-master\DSR-Gadget\bin\x64\Release\DSR-Gadget.pdb
+C:\Users\Vappy\Downloads\DSR-Gadget-master\DSR-Gadget\obj\x64\Release\DSR-Gadget.csprojAssemblyReference.cache
+C:\Users\Vappy\Downloads\DSR-Gadget-master\DSR-Gadget\obj\x64\Release\DSR_Gadget.FormMain.resources
+C:\Users\Vappy\Downloads\DSR-Gadget-master\DSR-Gadget\obj\x64\Release\DSR_Gadget.Properties.Resources.resources
+C:\Users\Vappy\Downloads\DSR-Gadget-master\DSR-Gadget\obj\x64\Release\DSR-Gadget.csproj.GenerateResource.cache
+C:\Users\Vappy\Downloads\DSR-Gadget-master\DSR-Gadget\obj\x64\Release\DSR-Gadget.csproj.CoreCompileInputs.cache
+C:\Users\Vappy\Downloads\DSR-Gadget-master\DSR-Gadget\obj\x64\Release\DSR-Gadget.exe
+C:\Users\Vappy\Downloads\DSR-Gadget-master\DSR-Gadget\obj\x64\Release\DSR-Gadget.pdb

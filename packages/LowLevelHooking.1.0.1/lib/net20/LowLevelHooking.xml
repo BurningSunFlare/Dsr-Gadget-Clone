@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LowLevelHooking</name>
+    </assembly>
+    <members>
+        <member name="T:LowLevelHooking.GlobalKeyboardEventSource">
+            <summary>
+            Enumerates the possible sources of low level key events.
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.GlobalKeyboardEventSource.InputDevice">
+            <summary>
+            The key event was reported by an input device.
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.GlobalKeyboardEventSource.InjectedByProcess">
+            <summary>
+            The key event was simulated by a process.
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.GlobalKeyboardEventSource.InjectedByLowerIntegrityLevelProcess">
+            <summary>
+            The key event was simulated by a less-trusted process than the current process.
+            </summary>
+        </member>
+        <member name="T:LowLevelHooking.GlobalKeyboardHook">
+            <summary>
+            A global low-level keyboard hook which raises events using the message loop of the thread on which it was created.
+            </summary>
+        </member>
+        <member name="E:LowLevelHooking.GlobalKeyboardHook.KeyDownOrUp">
+            <summary>
+            Raised when any key fires or is released.
+            </summary>
+        </member>
+        <member name="M:LowLevelHooking.GlobalKeyboardHook.#ctor">
+            <summary>
+            Installs a global low-level keyboard hook which raises events using the current thread's message loop.
+            </summary>
+        </member>
+        <member name="M:LowLevelHooking.GlobalKeyboardHook.Dispose">
+            <summary>
+            Uninstalls the hook.
+            </summary>
+        </member>
+        <member name="T:LowLevelHooking.GlobalKeyboardHookEventArgs">
+            <summary>
+            Provides data for the <see cref="E:LowLevelHooking.GlobalKeyboardHook.KeyDownOrUp"/> event.
+            </summary>
+        </member>
+        <member name="P:LowLevelHooking.GlobalKeyboardHookEventArgs.IsUp">
+            <summary>
+            If false, the key is firing. If true, the key is being released.
+            </summary>
+        </member>
+        <member name="P:LowLevelHooking.GlobalKeyboardHookEventArgs.KeyCode">
+            <summary>
+            The virtual key code without modifiers.
+            </summary>
+        </member>
+        <member name="P:LowLevelHooking.GlobalKeyboardHookEventArgs.ScanCode">
+            <summary>
+            The keyboard scan code.
+            </summary>
+        </member>
+        <member name="P:LowLevelHooking.GlobalKeyboardHookEventArgs.Alt">
+            <summary>
+            Indicates whether the Alt modifier key is down.
+            </summary>
+        </member>
+        <member name="P:LowLevelHooking.GlobalKeyboardHookEventArgs.Time">
+            <summary>
+            The elapsed time, in milliseconds, from the time the system was started to the time the hook message was placed in the thread's message queue. 
+            </summary>
+        </member>
+        <member name="P:LowLevelHooking.GlobalKeyboardHookEventArgs.Source">
+            <summary>
+            Indicates whether this key event was injected by a process or received from an input device.
+            </summary>
+        </member>
+        <member name="P:LowLevelHooking.GlobalKeyboardHookEventArgs.Handled">
+            <summary>
+            If set, prevents the key event from having any further effect on the system.
+            </summary>
+        </member>
+        <member name="M:LowLevelHooking.GlobalKeyboardHookEventArgs.#ctor(System.Boolean,LowLevelHooking.VirtualKey,System.UInt32,System.Boolean,System.UInt32,LowLevelHooking.GlobalKeyboardEventSource)">
+            <summary>
+            Initializes a new instance of the <see cref="T:LowLevelHooking.GlobalKeyboardHookEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="T:LowLevelHooking.VirtualKey">
+            <summary>
+            Windows virtual key codes
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.Break">
+            <summary>
+            Ctrl+Break causes <see cref="F:LowLevelHooking.VirtualKey.Break"/> rather than <see cref="F:LowLevelHooking.VirtualKey.Pause"/>.
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.Clear">
+            <summary>
+            Caused by pressing numpad 5 when Num Lock is off.
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.Pause">
+            <summary>
+            The Pause key. (Ctrl+Break is reported as <see cref="F:LowLevelHooking.VirtualKey.Break"/>.)
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.ImeKanaHangul">
+            <summary>
+            Kana/Hangul mode
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.ImeJunja">
+            <summary>
+            Junja mode
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.ImeFinal">
+            <summary>
+            Final mode
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.ImeHanjaKanji">
+            <summary>
+            Hanja/Kanji mode
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.Oem1">
+            <summary>
+            OEM specific. For US standard, ;:
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.OemPlus">
+            <summary>
+            OEM specific. For US standard, +
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.OemComma">
+            <summary>
+            OEM specific. For US standard, ,
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.OemMinus">
+            <summary>
+            OEM specific. For US standard, -
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.OemPeriod">
+            <summary>
+            OEM specific. For US standard, .
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.Oem2">
+            <summary>
+            OEM specific. For US standard, /?
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.Oem3">
+            <summary>
+            OEM specific. For US standard, `~
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.Oem4">
+            <summary>
+            OEM specific. For US standard, [{
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.Oem5">
+            <summary>
+            OEM specific. For US standard, \|
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.Oem6">
+            <summary>
+            OEM specific. For US standard, ]}
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.Oem7">
+            <summary>
+            OEM specific. For US standard, '"
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.Oem8">
+            <summary>
+            OEM specific.
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.OemAX">
+            <summary>
+            OEM specific. AX key on Japanese AX kbd
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.Oem102">
+            <summary>
+            OEM specific. &lt;> or \| on RT 102-key kbd.
+            </summary>
+        </member>
+        <member name="F:LowLevelHooking.VirtualKey.Packet">
+            <summary>
+            Used to pass Unicode chars as if keystrokes.
+            </summary>
+        </member>
+    </members>
+</doc>
